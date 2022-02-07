@@ -1,2 +1,40 @@
-# PyBer_Analysis_Challenge
+# PyBer_Analysis
 PyBer with Matplotlib
+
+
+## Overview:
+After the analysis for PyBer, a ride-sharing business, a deeper dive into reviewing the data by city type.  
+Work includes using Python, Pandas, and Matplotlb to create a summary DataFrame and a multi-line graph of the total weekly fares for each city type: Rural, Suburban, and Urban.  
+
+
+## Results:
+
+### Summary DataFrame
+
+Using the groupby() functions and merging two data sets , the fare per ride and fare per driver averages were calculated resulting in the summary DataFrame by city type. 
+
+![Pic 1](https://github.com/josepcherian/PyBer_Analysis_-Challenge/blob/main/Analysis/Deliverable1.PNG)
+
+
+1. The Urban city type had more total drivers than total rides, which had a dramatic impact on the average fare per ride and average fare per driver.The Urban drivers had the lowest average fare per ride and earned significantly less than the Rural drivers. 
+
+2. The Rural city type had the least number of total drivers so that they having the highest average fare per driver even though the ratio of total rides to total drivers is equivalent to the Suburban city type.  
+
+### Total Fare by City Type
+
+From the summary DataFrame, the data was pivoted into a new DataFrame, and then grouped by weeks to show the total fares by city type.   
+
+![Pic 2](https://github.com/josepcherian/PyBer_Analysis_-Challenge/blob/main/Analysis/PyBer_fare_summary.png)
+
+1. All three city types start to rise to a peak at the end for February.  For the Urban city type, that oscillating peak lasts through April, while the other city types decline in the month of March.  
+
+2. The Rural city type increases again leading into the month of April.  The Suburban city type starts to peak again at the end of April, while the Rural city type drops off.   
+
+
+## Summary and Recommendations:
+
+1. The results of the summary DataFrame could be due to Urban city types being more compact, which collects a lower average fare per ride, while Rural city types are more spread out, which would collect a higher average fare per ride.  To test this theory, PyBer should work to include mileage distance data as part of the data collection process and analysis.
+
+2. There are more total drivers than total rides in the Urban city types, the Urban drivers may not have enough work to support themselves.  PyBer may want to consider investing advertising dollars in the Urban city types to increase the total rides or risk losing Urban drivers. 
+
+3. If PyBer were to invest into the advertisement in the Urban city type, then when would ads be the most effective. After reviewing the Total Fare by City Tpye graph, the end of February kicks off the increase in total fares and would be a good time to launch an advertising campaign, which would also strategically help the other two city types. 
